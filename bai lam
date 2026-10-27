@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <math.h>
+int main (){
+    int N;
+    scanf ("%d",&N);
+    if (N < 2 ){
+    printf ("Khong phai so nguyen to");
+    return 1;}
+    int i;
+    if( i > sqrt(N)){
+        printf ("Co la so nguyen to");
+        return 1;
+    }
+    else 
+    for(i=2;i<=sqrt(N);i++)
+      if (N%i==0)
+    printf ("Khong phai so nguyen to")   ;
+    else
+    printf ("Co la so nguyen to ");
+return 0;
+}
